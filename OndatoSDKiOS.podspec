@@ -8,4 +8,7 @@ Pod::Spec.new do |spec|
   spec.authors      = { 'Ondato' => 'info@ondato.com' }
   spec.source       = { :git => 'git@github.com:ondato/ondato-sdk-ios.git', :tag => spec.version }
   spec.ios.vendored_frameworks  = 'OndatoSDK.framework', 'FaceTecSDK.framework'
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
